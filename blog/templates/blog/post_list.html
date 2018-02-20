@@ -5,9 +5,10 @@
 </head>
 <body>
 	<header>Header</header>
-	<div class="post post_header">Post header</div>
-	<div class="post post_text">I ran a ful diagnostic on the Oxygenator. Twice. It’s perfect. If anything goes wrong with it, there is a short-term spare I can use. But it’s solely for emergency use while repairing the main one. The spare doesn’t actualy pul CO2 apart and recapture the oxygen. It just absorbs the CO2 the same way the spacesuits do. It’s intended to last 5 days before it saturates the filters, which means 30 days for me (just one person breathing, instead of six). So there’s some insurance there. </div>
-	<div class="post post_header">Post header2</div>
-	<div class="post post_text">The Water Reclaimer is working fine, too. The bad news is there’s no backup. If it stops working, I’l be drinking reserve water while I rig up a primitive distilery to boil piss. Also, I’l lose half a liter of water per day to breathing until the humidity in the Hab reaches its maximum and water starts condensing on every surface. Then I’l be licking the wals. Yay. Anyway, for now, no problems with the Water Reclaimer.  </div>
+	{% for post in posts %}
+	<div class="post post_header">{{post.title}}</div>
+	<div class="post post_published_date">published: {{post.published_date}}<div>
+	<div class="post post_text">{{post.text|linebreaksbr}}</div>
+	{% endfor %}
 </body>
 </html>
