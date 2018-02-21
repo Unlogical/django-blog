@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Unchained</title>
-</head>
-<body>
-	<header>Header</header>
+{% extends 'blog/base.html' %}
+{% block content %}
 	{% for post in posts %}
-	<div class="post post_header">{{post.title}}</div>
-	<div class="post post_published_date">published: {{post.published_date}}<div>
-	<div class="post post_text">{{post.text|linebreaksbr}}</div>
+		<div class="post">
+			<div class="post post_title">
+				<a href="{% url 'post_detail' pk=post.pk %}"><h2>{{post.title}}</h2></a>
+			</div>
+			<div class="post post_published_date">published: {{post.published_date}}<div>
+			<div class="post short_post post_text">{{post.text|linebreaksbr}}</div>
+		</div>
 	{% endfor %}
-</body>
-</html>
+{% endblock %}

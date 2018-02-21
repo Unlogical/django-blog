@@ -1,0 +1,55 @@
+header {
+	background-color: #f70;
+	padding: 10px 0;
+	text-align: center;
+}
+header a {
+	font-weight: bold;
+	color: #fff;	
+}
+
+header a:hover, header a:active, header a:visited {
+	color: #fed;
+	text-decoration: none;
+}
+
+.post {
+	margin: auto;
+	width: 600px;
+}
+
+.post_title, 
+.post_title a {
+	color: #f63;
+	text-decoration: none;
+}
+
+.post_title a:hover{
+	text-decoration: none;
+	color: #f90;
+}
+
+.post_text {
+	padding: 5px 0 10px 0;
+	border-bottom: 2px solid #f90;
+	font-size: 14px;
+	color: #222;
+}
+
+.post_published_date {
+	font-size: 12px;
+	color: #555;
+}
+
+
+.detail_date {
+	display: block;
+	float: right;
+}
+
+.short_post {
+	height: 37pt;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
