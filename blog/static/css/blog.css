@@ -111,3 +111,50 @@ a:active {
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
+
+.button {
+	background-color: #f70;
+	color: #fff;
+	font-size: 20px;
+	border: 0px;
+}
+
+.save_button {
+	width: 90px;
+	height: 40px;
+	padding-top: 6px;
+	padding-left: 5px;
+}
+
+.save_button span {
+	display: block;
+	float: left;
+	margin-left: 5px;
+	margin-top: 3px;
+}
+
+.save_button:hover,
+.edit_button:hover {
+	background-color: #fda;
+	color: #f70; 
+}
+
+
+.edit_button {
+	display: block;
+	margin-top: 10px;
+	width: 90px;
+	height: 40px;
+	padding: 5px 10px;
+}
+
+.edit_button span {
+	display: block;
+	float: right;
+	padding-top: 3px;
+}
+
+.edit_button p {
+	display: block;
+	float: left;
+}
