@@ -14,10 +14,12 @@
 	</header>
 	{% if user.is_authenticated %}
 		<a href="{% url 'post_new' %}" class="new_post_icon"><span class="glyphicon glyphicon-plus"></span></a>
+		<a href="{% url 'post_draft_list' %}" class="new_post_icon"><span class="glyphicon glyphicon-edit"></span></a>
 	{% endif %}
 	<div class="content_container">
 		{% block content %}
 		{% endblock %}
 	</div>
+
 </body>
 </html>

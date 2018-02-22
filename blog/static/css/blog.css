@@ -105,6 +105,10 @@ a:active {
 	float: right;
 }
 
+.not_published {
+	color: #f70;
+}
+
 .short_post {
 	height: 37pt;
 	overflow: hidden;
@@ -133,6 +137,13 @@ a:active {
 	margin-top: 3px;
 }
 
+
+.save_button:visited,
+.edit_button:visited {
+	background-color: #f70;
+	color: #fff;
+}
+
 .save_button:hover,
 .edit_button:hover {
 	background-color: #fda;
@@ -141,11 +152,12 @@ a:active {
 
 
 .edit_button {
-	display: block;
+	display: inline-block;
 	margin-top: 10px;
-	width: 90px;
+	width: 120px;
 	height: 40px;
 	padding: 5px 10px;
+	margin-right: 10px;
 }
 
 .edit_button span {
