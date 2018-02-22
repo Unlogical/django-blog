@@ -103,6 +103,7 @@ a:active {
 	border-bottom: 2px solid #f70;
 	background-color: #fff;
 	width: 350px;
+	margin-left: 5px;
 }
 
 .post_form textarea {
@@ -110,6 +111,7 @@ a:active {
 	border: 1px solid #fa0;
 	padding: 5px 10px;
 	width: 550px;
+	margin-left: 5px;
 }
 
 .post_form textarea:active,
