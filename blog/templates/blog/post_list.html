@@ -9,7 +9,11 @@
 			<div class="post post_published_date">published: {{post.published_date}}<div>
 			<div class="post short_post post_text">{{post.text|truncatechars:200}}</div>
 			<a class="comment_button" href="{% url 'add_comment_to_post' pk=post.pk %}"><p>Add comment</p><span class="glyphicon glyphicon-pencil"></span></a>
-			<a href="{% url 'post_detail' pk=post.pk %}" class="comments_link">Comments: {{ post.approved_comments.count }}</a>
+			<a href="{% url 'post_detail' pk=post.pk %}" class="comments_link">Comments: {{ post.approved_comments.count }} 
+			{% if user.is_authenticated %}
+				(waiting for approvement {{post.unapproved_comments.count}})
+			{% endif %}
+			</a>
 		</div>
 	{% endfor %}
 {% endblock %}
