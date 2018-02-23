@@ -3,7 +3,7 @@
 <html>
 <head>
 	<title>Orange blog</title>
-	<link href="https://fonts.googleapis.com/css?family=Butterfly+Kids|Caveat|Amatic+SC|Fjalla+One|Ruge+Boogie|Sacramento|Marck+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Butterfly+Kids|Caveat|Amatic+SC|Fjalla+One|Exo|Ruge+Boogie|Sacramento|Marck+Script" rel="stylesheet">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="{% static 'css/blog.css' %}">
@@ -17,7 +17,7 @@
 	</header>
 	{% if user.is_authenticated %}
 		<a href="{% url 'logout' %}" class="round_button log_out_icon" data-title="log out {{ user.username }}"><span class="glyphicon glyphicon-log-out"></span></a>
-		<a href="{% url 'post_draft_list' %}" class="round_button draft_list_icon " data-title="draft list"><span class="glyphicon glyphicon-edit"></span></a>
+		<a href="{% url 'post_draft_list' %}" class="round_button draft_list_icon " data-title="draft list"><span class="glyphicon glyphicon-list"></span></a>
 		<a href="{% url 'post_new' %}" class="round_button new_post_icon" data-title="new post"><span class="glyphicon glyphicon-plus"></span></a>
 	{% else %}
 		<a href="{% url 'login' %}" class="round_button" data-title="log in"><span class="glyphicon glyphicon-log-in"></span></a>
