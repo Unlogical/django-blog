@@ -74,9 +74,12 @@
 	border-radius: 40px;
 	margin-left: 125px;
 	background-color: rgba(255, 77, 0, 0.6);
+	outline: none;
+	-webkit-appearance: none;
 }
 
 .login_form button:active,
 .login_form button:visited {
 	outline: none;
+	-webkit-appearance: none;
 }
