@@ -34,7 +34,12 @@
 }
 
 .comments_link {
+	display: inline-block;
 	color: #d30;
+	margin-top: 5px;
+	font-family: Exo;
+	font-weight: bold;
+	font-size: 14px;
 }
 
 .comments_link:hover {
@@ -42,9 +47,13 @@
 	text-decoration: none;
 }
 
-.comments_link,
 .comment_button {
 	font-family: Exo;
 	font-weight: bold;
 	font-size: 16px;
+}
+
+.wide_block {
+	width: 600px;
+	height: 30px;
 }
