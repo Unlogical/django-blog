@@ -29,6 +29,18 @@
 	border: 0px;
 }
 
+.button:visited {
+	background-color: #f70;
+	color: #fff;
+}
+
+.button:hover {
+	background-color: #fda;
+	color: #f70; 
+}
+
+
+
 .save_button {
 	width: 90px;
 	height: 40px;
@@ -44,18 +56,8 @@
 }
 
 
-.button:visited {
-	background-color: #f70;
-	color: #fff;
-}
-
-.button:hover {
-	background-color: #fda;
-	color: #f70; 
-}
-
-
-.edit_button {
+.edit_button,
+.add_comment_button {
 	display: inline-block;
 	margin-top: 10px;
 	width: 120px;
@@ -64,15 +66,21 @@
 	margin-right: 10px;
 }
 
+.add_comment_button {
+	width: 180px;
+}
+
 .edit_button span,
-.comment_button span {
+.comment_button span,
+.add_comment_button span {
 	display: block;
 	float: right;
 	padding-top: 3px;
 }
 
 .edit_button p,
-.comment_button p {
+.comment_button p,
+.add_comment_button p {
 	display: block;
 	float: left;
 }
