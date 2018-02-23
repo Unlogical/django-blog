@@ -64,18 +64,31 @@
 	margin-right: 10px;
 }
 
-.edit_button span {
+.edit_button span,
+.comment_button span {
 	display: block;
 	float: right;
 	padding-top: 3px;
 }
 
-.edit_button p {
+.edit_button p,
+.comment_button p {
 	display: block;
 	float: left;
 }
 
-
+.comment_button {
+	display: inline-block;
+	border: 2px solid #f60;
+	color: #f60;
+	font-size: 14px;
+	margin-top: 10px;
+	width: 180px;
+	height: 30px;
+	padding: 2px 5px;
+	margin-right: 10px;
+	float: right;
+}
 
 .round_button::after {
 	content: attr(data-title);

@@ -1,0 +1,21 @@
+.comment {
+	width: 600px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+/*.comment_author {
+
+}
+
+.comment_text{
+
+}*/
+
+.comments_title {
+	margin-top: 10px;
+	margin-bottom: -15px; 
+	padding: 2px 0;
+	color: #F40;
+	font-weight: bold;
+}
