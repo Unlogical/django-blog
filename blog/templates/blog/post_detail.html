@@ -34,20 +34,39 @@
 	{% endif %}
 </div>
 <p class="post comments_title">Comments:</p>
-{% for comment in post.approved_comments.all %}
-    <div class="comment">
-        <div class="detail_date post_published_date">{{ comment.created_date }} 
-        </div>
-        	{% if not comment.approved_comment and user.is_authenticated %}
-    			<div class="comment_author">{{ comment.author }}</div>
-                <a class="white_round_button" href="{% url 'comment_remove' pk=comment.pk %}" data-title="delete comment"><span class="glyphicon glyphicon-remove"></span></a>
-                <a class="white_round_button" href="{% url 'comment_approve' pk=comment.pk %}" data-title="approve comment"><span class="glyphicon glyphicon-ok"></span></a>
-            {% else %}
-            	<div class="comment_header">{{ comment.author }}</div>
-            {% endif %}
-        <p class="comment_text">{{ comment.text|linebreaks }}</p>
-    </div>
-{% empty %}
-    <p class="comment">No comments here yet :(</p>
-{% endfor %}
+{% if user.is_authenticated %}
+	{% for comment in post.comments.all %}
+	    <div class="comment">
+	        <div class="detail_date post_published_date">{{ comment.created_date }} 
+	        </div>
+	        	{% if not comment.approved_comment and user.is_authenticated %}
+	    			<div class="comment_author">{{ comment.author }}</div>
+	                <a class="white_round_button" href="{% url 'comment_remove' pk=comment.pk %}" data-title="delete comment"><span class="glyphicon glyphicon-remove"></span></a>
+	                <a class="white_round_button" href="{% url 'comment_approve' pk=comment.pk %}" data-title="approve comment"><span class="glyphicon glyphicon-ok"></span></a>
+	            {% else %}
+	            	<div class="comment_header">{{ comment.author }}</div>
+	            {% endif %}
+	        <p class="comment_text">{{ comment.text|linebreaks }}</p>
+	    </div>
+	{% empty %}
+	    <p class="comment">No comments here yet :(</p>
+	{% endfor %}
+{% else %}
+	{% for comment in post.approved_comments.all %}
+	    <div class="comment">
+	        <div class="detail_date post_published_date">{{ comment.created_date }} 
+	        </div>
+	        	{% if not comment.approved_comment and user.is_authenticated %}
+	    			<div class="comment_author">{{ comment.author }}</div>
+	                <a class="white_round_button" href="{% url 'comment_remove' pk=comment.pk %}" data-title="delete comment"><span class="glyphicon glyphicon-remove"></span></a>
+	                <a class="white_round_button" href="{% url 'comment_approve' pk=comment.pk %}" data-title="approve comment"><span class="glyphicon glyphicon-ok"></span></a>
+	            {% else %}
+	            	<div class="comment_header">{{ comment.author }}</div>
+	            {% endif %}
+	        <p class="comment_text">{{ comment.text|linebreaks }}</p>
+	    </div>
+	{% empty %}
+	    <p class="comment">No comments here yet :(</p>
+	{% endfor %}
+{% endif %}
 {% endblock %}
