@@ -4,13 +4,16 @@ header {
 	font-family: 'Sacramento', cursive;
 	font-family: 'Butterfly Kids', cursive; 
 	font-family: 'Ruge Boogie', cursive;
+	width: 100%;
 }
+
+
 
 header a,
 header a:visited {
 	font-weight: bold;
 	color: #fff;
-	text-decoration: none;	
+	text-decoration: none;
 }
 
 header a:hover,
@@ -24,6 +27,12 @@ header h1 {
 	width: 100%;
 	font-size: 50px;
 	text-align: center;
+}
+@media(max-width: 800px){
+	header h1{
+		text-align: left;
+		margin-left: 10px;	
+	}
 }
 
 a,
@@ -54,6 +63,10 @@ a:active {
 	text-decoration: none;
 	font-family: 'Marck Script', cursive;
 	font-family: 'Caveat', cursive;
+}
+
+.post_title:visited {
+
 }
 
 .post_title a:hover *{
