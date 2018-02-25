@@ -6,6 +6,8 @@ header {
 	font-family: 'Ruge Boogie', cursive;
 }
 
+
+
 header a,
 header a:visited {
 	font-weight: bold;
@@ -24,6 +26,12 @@ header h1 {
 	width: 100%;
 	font-size: 50px;
 	text-align: center;
+}
+@media(max-width: 800px){
+	header h1{
+		text-align: left;
+		margin-left: 10px;	
+	}
 }
 
 a,

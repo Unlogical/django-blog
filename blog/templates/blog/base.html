@@ -16,6 +16,7 @@
 	<header>
 		<h1><a href="/">Orange blog</a></h1>
 	</header>
+	<div class="menu">
 	{% if user.is_authenticated %}
 		<a href="{% url 'logout' %}" class="round_button log_out_icon" data-title="log out {{ user.username }}"><span class="glyphicon glyphicon-log-out"></span></a>
 		<a href="{% url 'post_draft_list' %}" class="round_button draft_list_icon " data-title="draft list"><span class="glyphicon glyphicon-list"></span></a>
@@ -23,6 +24,7 @@
 	{% else %}
 		<a href="{% url 'login' %}" class="round_button" data-title="log in"><span class="glyphicon glyphicon-log-in"></span></a>
 	{% endif %}
+	</div>
 	<div class="content_container">
 		{% block content %}
 		{% endblock %}
