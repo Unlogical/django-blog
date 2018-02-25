@@ -4,6 +4,7 @@ header {
 	font-family: 'Sacramento', cursive;
 	font-family: 'Butterfly Kids', cursive; 
 	font-family: 'Ruge Boogie', cursive;
+	width: 102%;
 }
 
 
@@ -12,7 +13,7 @@ header a,
 header a:visited {
 	font-weight: bold;
 	color: #fff;
-	text-decoration: none;	
+	text-decoration: none;
 }
 
 header a:hover,
@@ -62,6 +63,10 @@ a:active {
 	text-decoration: none;
 	font-family: 'Marck Script', cursive;
 	font-family: 'Caveat', cursive;
+}
+
+.post_title:visited {
+
 }
 
 .post_title a:hover *{

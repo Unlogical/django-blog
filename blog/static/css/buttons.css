@@ -63,6 +63,7 @@
 .button:visited {
 	background-color: #f70;
 	color: #fff;
+	text-decoration: none;	
 }
 
 .button:hover {
@@ -116,7 +117,8 @@
 	float: left;
 }
 
-.comment_button {
+.comment_button,
+.comment_button:visited {
 	display: inline-block;
 	border: 2px solid #fff;
 	color: #f60;
@@ -127,6 +129,7 @@
 	padding: 2px 5px;
 	margin-right: 10px;
 	float: right;
+	text-decoration: none;	
 }
 
 .comment_button:hover {
