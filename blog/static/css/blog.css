@@ -4,10 +4,12 @@ header {
 	font-family: 'Sacramento', cursive;
 	font-family: 'Butterfly Kids', cursive; 
 	font-family: 'Ruge Boogie', cursive;
-	width: 101%;
+	width: 100%;
 }
 
-
+body {
+	overflow-x: hidden;
+}
 
 header a,
 header a:visited {
