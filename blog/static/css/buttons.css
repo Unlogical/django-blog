@@ -217,6 +217,11 @@
 	text-align: center;
 }
 
+.approved {
+	color:#fdd;
+	font-size: 11px;
+}
+
 .white_round_button:hover {
 	color: #fff;
 	background-color: #f41;
