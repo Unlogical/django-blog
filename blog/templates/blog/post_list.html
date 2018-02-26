@@ -8,7 +8,12 @@
 				<h2>{{post.title}}</h2>
 			</div></a>
 			<div class="post_published_date">published: {{post.published_date}}<div>
-			<div class="short_post post_text">{{post.text|truncatechars:200}}</div>
+			{% if post.image %}
+				<img src="{{post.image.url}}" class="post_image"  height="37pt">
+				<div class="short_post post_text">{{post.text|truncatechars:200}}</div>
+			{% else %}
+				<div class="short_post post_text">{{post.text|truncatechars:200}}</div>
+			{% endif %}
 			<a class="comment_button" href="{% url 'add_comment_to_post' pk=post.pk %}"><p>Add comment</p><span class="glyphicon glyphicon-pencil"></span></a>
 			<a href="{% url 'post_detail' pk=post.pk %}" class="comments_link">Comments: {{ post.approved_comments.count }} 
 			{% if user.is_authenticated %}

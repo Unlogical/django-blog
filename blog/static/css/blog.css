@@ -106,7 +106,13 @@ a:active {
 	white-space: nowrap;
 }
 
-.post_image {
+.post_detail_image {
 	display: block;
-	background-color: #f80;
+	margin-bottom: 10px;
+}
+
+.post_image {
+	display: inline-block;
+	float: left;
+	margin-right: 10px;
 }
