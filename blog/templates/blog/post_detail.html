@@ -11,6 +11,7 @@
     	</div>
 	{% endif %}
 	<div class="post_title"><h2>{{post.title}}</h2></div>
+	<img src="{{post.image.url}}" width="100px" height="100px" class="post_image">
 	<div class="post_text">{{post.text|linebreaksbr}}</div>
 	{% if user.is_authenticated %}
 		<a class="add_comment_button button" href="{% url 'add_comment_to_post' pk=post.pk %}">

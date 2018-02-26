@@ -106,3 +106,7 @@ a:active {
 	white-space: nowrap;
 }
 
+.post_image {
+	display: block;
+	background-color: #f80;
+}
