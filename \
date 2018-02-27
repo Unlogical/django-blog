@@ -1,5 +1,0 @@
-Host github.com
-Port 22
-Hostname github.com
-IdentityFile ~/.ssh/unlogical
-IdentitiesOnly yes
