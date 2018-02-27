@@ -14,7 +14,7 @@
 					{{post.text|truncatechars:400}}
 				</div>
 			{% else %}
-				<div class="short_post post_text">{{post.text|truncatechars:200}}</div>
+				<div class="short_post post_text">{{post.text|linebreaks}}</div>
 			{% endif %}
 		</a>
 			<a class="comment_button" href="{% url 'add_comment_to_post' pk=post.pk %}"><p>Add comment</p><span class="glyphicon glyphicon-pencil"></span></a>

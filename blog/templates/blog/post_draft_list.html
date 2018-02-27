@@ -1,5 +1,7 @@
 {% extends 'blog/base.html' %}
 {% block content %}
+<div class="col-xs-0 col-sm-0 col-md-2 col-lg-2"></div>
+<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
 	{% for post in posts %}
         <div class="post">
 			<a href="{% url 'post_detail' pk=post.pk %}" class="post_link">
@@ -7,7 +9,15 @@
 				<h2>{{post.title}}</h2>
 			</div></a>
             <p class="post post_published_date">created: {{ post.created_date|date:'d-m-Y' }}</p>
-            <p class="post short_post post_text">{{ post.text|truncatechars:200 }}</p>
+            {% if post.image %}
+				<div class="short_post post_text">
+				<img src="{{post.image.url}}" class="post_image"  height="50px" align="left">
+					{{post.text|truncatechars:400}}
+				</div>
+			{% else %}
+				<div class="short_post post_text">{{post.text|linebreaks}}</div>
+			{% endif %}
         </div>
     {% endfor %}
+</div>
 {% endblock %}
