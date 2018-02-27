@@ -58,7 +58,6 @@ a:active {
 	width: 600px;
 }
 
-
 .post_title, 
 .post_title a {
 	color: #f63;
@@ -78,9 +77,9 @@ a:active {
 
 .post_text {
 	padding: 5px 0 10px 0;
-	border-bottom: 2px solid #f90;
 	font-size: 14px;
 	color: #222;
+	border-bottom: 2px solid #f90;
 }
 
 
@@ -122,11 +121,29 @@ a:active {
 	white-space: nowrap;*/
 }
 
-.post_detail_image {
+.image_draft {
+	min-height: 70px;
+}
+
+.image_post {
+
+}
+
+.post_detail_image,
+.post_image {
 	display: block;
 	margin-bottom: 10px;
 }
 
+/*.image_block {
+	width: 100%;
+
+}
+*/
 .post_image {
+	max-width: 100%;
+}
+
+.draft_image {
 	margin-right: 10px;
 }
