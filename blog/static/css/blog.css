@@ -1,6 +1,7 @@
 header {
 	background-color: #f70;
 	padding: 10px 0;
+	margin: 0;
 	font-family: 'Sacramento', cursive;
 	font-family: 'Butterfly Kids', cursive; 
 	font-family: 'Ruge Boogie', cursive;
@@ -35,9 +36,6 @@ header h1 {
 
 
 @media(max-width: 1000px){
-	header {
-		width: 110%;
-	}
 	header h1{
 		text-align: left;
 		margin-left: 10px;
