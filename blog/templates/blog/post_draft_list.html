@@ -12,7 +12,7 @@
             {% if post.image %}
 				<div class="image_draft post_text">
 				<img src="{{post.image.url}}" class="draft_image"  height="50px" align="left">
-					{{post.text|truncatechars:400}}
+					{{post.text|truncatechars:200}}
 				</div>
 			{% else %}
 				<div class="short_post post_text">{{post.text|linebreaks}}</div>
