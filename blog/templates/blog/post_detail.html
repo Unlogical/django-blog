@@ -40,20 +40,20 @@
 {% if user.is_authenticated %}
 	{% for comment in post.comments.all %}
 	    <div class="comment">
-	        <div class="detail_date post_published_date">{{ comment.created_date }} 
+	        <div class="detail_date post_published_date">{{ comment.created_date }} </div>
+	    	<div class="comment_author">{{ comment.author }}</div>
+        	{% if not comment.approved_comment  %}
+                <a class="white_round_button" href="{% url 'comment_remove' pk=comment.pk %}" data-title="delete comment"><span class="glyphicon glyphicon-remove"></span></a>
+                <a class="white_round_button" href="{% url 'comment_approve' pk=comment.pk %}" data-title="approve comment"><span class="glyphicon glyphicon-ok"></span></a>
+            {% else %}
+            	<a class="white_round_button approved" href="{% url 'comment_remove' pk=comment.pk %}" data-title="delete comment"><span class="glyphicon glyphicon-remove"></span></a>
+            {% endif %}
+	        <div class="comment_text">
+	        	<p>{{ comment.text|linebreaks }}</p>
 	        </div>
-	        	{% if not comment.approved_comment  %}
-	    			<div class="comment_author">{{ comment.author }}</div>
-	                <a class="white_round_button" href="{% url 'comment_remove' pk=comment.pk %}" data-title="delete comment"><span class="glyphicon glyphicon-remove"></span></a>
-	                <a class="white_round_button" href="{% url 'comment_approve' pk=comment.pk %}" data-title="approve comment"><span class="glyphicon glyphicon-ok"></span></a>
-	            {% else %}
-	            	<div class="comment_author">{{ comment.author }}</div>
-	            	<a class="white_round_button approved" href="{% url 'comment_remove' pk=comment.pk %}" data-title="delete comment"><span class="glyphicon glyphicon-remove"></span></a>
-	            {% endif %}
-	        <p class="comment_text">{{ comment.text|linebreaks }}</p>
 	    </div>
 	{% empty %}
-	    <p class="comment">No comments here yet :(</p>
+	    <p class="comment_text">No comments here yet :(</p>
 	{% endfor %}
 {% else %}
 	{% for comment in post.approved_comments.all %}
