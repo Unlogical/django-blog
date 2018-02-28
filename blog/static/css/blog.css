@@ -33,11 +33,8 @@ header h1 {
 
 
 @media(max-width: 1000px){
-	body {
-		max-width: 980px;
-	}
 	header {
-		width: 102%;
+		width: 105%;
 	}
 	header h1{
 		text-align: left;
