@@ -75,6 +75,8 @@ a:active {
 	font-family: 'Caveat', cursive;
 }
 
+
+
 .post_title:visited {
 
 }
@@ -158,6 +160,9 @@ a:active {
 }
 
 @media(max-width: 1000px) {
+	.post_title {
+		margin-top: 80px;
+	}
 	.post_title h2 {
 		font-size: 70px;
 	}
