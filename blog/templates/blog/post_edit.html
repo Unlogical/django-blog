@@ -1,9 +1,12 @@
 {% extends 'blog/base.html' %}
 {% block content%}
-<h2 class="post post_title lower">New post</h2>
-<form enctype="multipart/form-data" method="post" class="post post_form">
-	{% csrf_token %}
-	{{ form.as_p }}
-	<button type="submit" class="save_button button"><span class="glyphicon glyphicon-floppy-disk"></span><p>Save</p></button>
-</form>
+<div class="col-xs-0 col-sm-0 col-md-2 col-lg-2"></div>
+<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+	<h2 class="post_title">New post</h2>
+	<form enctype="multipart/form-data" method="post" class="post_form">
+		{% csrf_token %}
+		{{ form.as_p }}
+		<button type="submit" class="save_button button"><span class="glyphicon glyphicon-floppy-disk"></span><p>Save</p></button>
+	</form>
+</div>
 {% endblock %}
