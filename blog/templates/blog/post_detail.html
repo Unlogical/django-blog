@@ -1,6 +1,7 @@
 {% extends 'blog/base.html' %}
 {% block content %}
-<div class="post">
+<div class="col-xs-0 col-sm-0 col-md-2 col-lg-2"></div>
+<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
 	{% if post.published_date %}
     	<div class="detail_date post_published_date">
         	{{ post.published_date }}
@@ -35,8 +36,7 @@
 		</a>
 	</div>
 	{% endif %}
-</div>
-<p class="post comments_title">Comments:</p>
+<p class="comments_title">Comments:</p>
 {% if user.is_authenticated %}
 	{% for comment in post.comments.all %}
 	    <div class="comment">
@@ -73,4 +73,5 @@
 	    <p class="comment">No comments here yet :(</p>
 	{% endfor %}
 {% endif %}
+</div>
 {% endblock %}
