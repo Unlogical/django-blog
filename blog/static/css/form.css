@@ -2,7 +2,7 @@
 	margin-top: 10px;
 }
 
-.post_form input {
+.post_form input[type=text] {
 	border: 0px;
 	border-bottom: 2px solid #f70;
 	background-color: #fff;
@@ -32,8 +32,8 @@
 	.post_form p {
 		font-size: 40px;
 	}
-	.post_form input {
-		width: 87%;
+	.post_form input[type=text] {
+		width: 86%;
 	}
 
 	.post_form textarea {

@@ -247,10 +247,10 @@
 	}
 	.save_button p{
 		font-size: 40px;
+		padding-top: 0px;
 	}
 	.save_button span {
 		margin-left: 10px;
-		margin-top: 10px;
 		font-size: 40px;
 	}
 
