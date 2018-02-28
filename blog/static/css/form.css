@@ -28,25 +28,6 @@
 }
 
 
-@media(max-width: 1000px) {
-	.post_form p {
-		font-size: 40px;
-	}
-	.post_form input[type=text] {
-		width: 86%;
-	}
-
-	.post_form textarea {
-		width: 100%;
-		height: 300px;
-	}
-
-	.post_form input[type=file] {
-		display: inline-block;
-		width: 70%;
-	}
-}
-
 
 .login_form {
 	width: 400px;

@@ -58,11 +58,3 @@
 	height: 30px;
 }
 
-@media(max-width: 1000px) {
-	.comments_link {
-		font-size: 25px;
-	}
-	.comment_button {
-		font-size: 32px;
-	}
-}

@@ -1,0 +1,120 @@
+@media(max-width: 1200px){
+	.menu {
+		position: absolute;
+		top: 10px;
+		right: -15px;
+	}
+}
+
+
+@media(max-width: 1000px) {
+	.comments_link {
+		font-size: 25px;
+	}
+	.comment_button {
+		font-size: 32px;
+	}
+	.post_form p {
+		font-size: 40px;
+	}
+	.post_form input[type=text] {
+		width: 86%;
+	}
+
+	.post_form textarea {
+		width: 100%;
+		height: 300px;
+	}
+
+	.post_form input[type=file] {
+		display: inline-block;
+		width: 70%;
+	}
+	.comment_button_block {
+		height: 50px;
+		width: 100%;
+	}
+	.post_title h2 {
+		font-size: 70px;
+	}
+	.post_text {
+		font-size: 40px;
+	}
+	.post_published_date {
+		font-size: 25px;
+	}
+	.post_image {
+		width: 100%;
+	}
+	header {
+		padding-right: 20px;
+	}
+	header h1{
+		text-align: left;
+		margin-left: 10px;
+		font-size: 110px;	
+	}
+	.menu {
+		position: absolute;
+		top: 10px;
+		right: 0;
+	}
+
+	.menu .round_button {
+		margin-right: 40px;
+		margin-top: 30px;
+		padding: 20px;
+		border-radius: 45px;
+	}
+
+	.menu .round_button span {
+		font-size: 50px;
+	}
+
+	.save_button {
+		width: 200px;
+		height: 60px;
+	}
+	.save_button p{
+		font-size: 40px;
+		padding-top: 0px;
+	}
+	.save_button span {
+		margin-left: 10px;
+		font-size: 40px;
+	}
+
+}
+
+@media(max-width: 600px){
+	.menu {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		width: 20px;
+	}
+	.menu .round_button {
+		padding: 0 5px;
+		margin: 0;
+		margin-top: 10px ;
+		text-align: center;
+	}
+	.menu .round_button span {
+		font-size: 10px;
+	}
+	.round_button::after {
+		font-size: 8px;
+		margin-top: 20px;
+	}
+	.log_out_icon::after {
+	margin-left: -50px;
+	}
+
+	.new_post_icon::after {
+		margin-left: -40px;
+	}
+
+	.draft_list_icon::after {
+		margin-left: -30px;
+	}
+}
