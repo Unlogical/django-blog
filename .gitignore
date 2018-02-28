@@ -6,4 +6,5 @@ myvenv
 venv
 db.sqlite3
 /static
+media*
 local_settings.py
