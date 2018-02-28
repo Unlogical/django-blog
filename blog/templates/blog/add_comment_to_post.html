@@ -1,8 +1,11 @@
 {% extends 'blog/base.html' %}
 {% block content %}
-    <h1 class="post post_title lower">New comment</h1>
-    <form method="POST" class="post post_form">{% csrf_token %}
+<div class="col-xs-0 col-sm-0 col-md-2 col-lg-2"></div>
+<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+    <h1 class="post_title lower">New comment</h1>
+    <form method="POST" class="post_form">{% csrf_token %}
         {{ form.as_p }}
         <button type="submit" class="button save_button"><span class="glyphicon glyphicon-share"></span><p>Send</p></button>
     </form>
+</div>
 {% endblock %}

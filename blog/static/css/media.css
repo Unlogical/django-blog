@@ -18,12 +18,12 @@
 		font-size: 40px;
 	}
 	.post_form input[type=text] {
-		width: 86%;
+		width: 100%;
 	}
 
 	.post_form textarea {
 		width: 100%;
-		height: 300px;
+		height: 800px;
 	}
 
 	.post_form input[type=file] {
