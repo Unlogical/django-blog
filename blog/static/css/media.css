@@ -71,6 +71,20 @@
 		font-size: 50px;
 	}
 
+
+	.comment_button {
+		width: 370px;
+		height: 80px;
+		padding-top: 10px;
+	}
+	.comment_button p{
+		font-size: 40px;
+		margin-left: 10px;
+	}
+	.comment_button span {
+		font-size: 40px;
+		margin-right: 10px;
+	}
 	.save_button {
 		width: 200px;
 		height: 60px;
