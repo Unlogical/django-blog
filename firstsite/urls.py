@@ -20,10 +20,11 @@ from django.conf import settings
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.contrib.staticfiles.urls import static
 from django.views.static import serve
+from blog.forms import CustomAuthForm
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^accounts/login/$', views.login, name='login'),
+    url(r'^accounts/login/$', views.login, name='login', kwargs={"authentication_form":CustomAuthForm}),
     url(r'^accounts/logout/$', views.logout, name='logout', kwargs={'next_page': '/'}),
     url(r'', include('blog.urls')),
     url(r'^media/(?P<path>.*)$', serve, {
