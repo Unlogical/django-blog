@@ -13,6 +13,19 @@ body {
 	margin: 0;
 	padding: 0;
 }
+/*
+*:focus {
+outline: 0;
+}
+input:-webkit-autofill {
+-webkit-box-shadow: none;
+-webkit-text-fill-color: #fff !important;
+}
+*/
+button:focus, input:focus, a:focus{
+text-decoration: none !important;
+outline: none !important;
+}
 
 header a,
 header a:visited {

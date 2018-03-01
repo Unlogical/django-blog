@@ -38,9 +38,6 @@
 	.comments_link {
 		font-size: 25px;
 	}
-	.comment_button {
-		font-size: 32px;
-	}
 	.post_form p {
 		font-size: 40px;
 	}
@@ -136,31 +133,37 @@
 		width: 100%;
 	}
 	.comment_button {
-		font-size: 70px;
+		font-size: 40px;
+		width: 370px;
+		height: 70px;
+		border: 0px  solid #fdb;
+		background-color: #fdb;
 		margin: 0;
 		margin-top: 50px;
 		margin-bottom: 10px;
+		padding: 10px;
 	}
 	.comment_button p{
 		margin-left: 10px;
-		margin-top: -10px;
+		margin-top: 0px;
 	}
 	.comment_button span {
 		margin-right: 10px;
 	}
 	.save_button {
 		float: right;
-		width: 200px;
-		height: 70px;
-		padding-bottom: 20px;
+		width: 250px;
+		height: 80px;
+		padding: 10px;
 		margin-bottom: 10px;
+		font-weight: bold;
 	}
 	.save_button p{
-		font-size: 40px;
+		font-size: 50px;
 	}
 	.save_button span {
 		margin-left: 10px;
-		font-size: 40px;
+		font-size: 50px;
 		margin-top: 10px;
 	}
 
@@ -206,8 +209,7 @@
 		color: #f50;
 	}
 
-	.add_comment_button,
-	.comment_button {
+	.add_comment_button {
 		width: 100%;
 		font-size: 70px;
 		font-weight: bold;
@@ -244,6 +246,9 @@
 }
 
 @media(max-width: 800px){
+	body {
+		overflow-y: scroll;
+	}
 	.menu {
 		position: relative;
 		display: block;
@@ -279,7 +284,7 @@
 	}
 
 	.log_out_icon::after {
-	margin-left: -50px;
+		margin-left: -50px;
 	}
 
 	.new_post_icon::after {
