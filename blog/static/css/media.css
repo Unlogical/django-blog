@@ -81,9 +81,9 @@
 
 	.comment_author {
 		font-size: 50px;
-		width: 100%;
 		margin-bottom: 0;
 		padding-bottom: 0;
+		width: 80%;
 	}
 
 	.comment_text {
@@ -149,17 +149,25 @@
 	}
 
 	.white_round_button {
+		float: right;
+		font-size: 40px;
+		width: 60px;
+		height: 60px;
+		border-radius: 30px;
+	}
+	.white_round_button::after {
 		font-size: 20px;
-		width: 30px;
-		height: 30px;
-		border-radius: 15px;
-
 	}
 
 	.white_round_button span {
-		padding-top: 0;
-		padding-bottom: 10px;
-		margin-top: 0;
+		padding: 0;
+		margin: 0;
+		padding-top: 5px;
+		font-size: 30px;
+	}
+
+	.white_round_button[data-title="delete comment"] {
+		margin-left: 30px;
 	}
 }
 
@@ -169,7 +177,8 @@
 		display: block;
 
 	}
-	.menu .round_button {
+	.menu .round_button,
+	.small_edit_button {
 		border-radius: 0px;
 		width: 32%;
 		margin-left: 0;
@@ -194,4 +203,29 @@
 	.draft_list_icon::after {
 		margin-left: -30px;
 	}
+	.comment_author {
+		width: 70%;
+		overflow-x: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	.edit_button,
+	.add_comment_button {
+		display: none;
+	}
+
+	.post_published_date {
+		display: none;
+	}
+
+	.small_edit_button {
+		display: block;
+		float: left;
+		margin-top: 20px;
+		padding: 20px;
+		font-size: 40px;
+	}
+
+
 }

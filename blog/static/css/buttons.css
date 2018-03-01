@@ -158,14 +158,13 @@
 
 .white_round_button {
 	display: block;
-	float: left;
+	float: right;
 	background-color: #fff;
 	color: #f41;
 	width: 25px;
 	height: 25px;
 	font-size: 13px;
-	border-radius: 13px;
-	margin-top: 10px;
+	border-radius: 13px;;
 	text-align: center;
 }
 
@@ -219,4 +218,6 @@
     transition-duration: 0.8s; 	
 }
 
-
+.small_edit_button {
+	display: none;
+}

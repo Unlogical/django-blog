@@ -16,7 +16,7 @@
 
 .comment_author {
 	display: block;
-	width: 100%;
+	width: 90%;
 	float: left;
 	font-weight: bold;
 	color: #f41;
@@ -65,3 +65,12 @@
 	height: 30px;
 }
 
+.comment .post_published_date {
+	float: left;
+	margin-top: 10px;
+	width: 90%;
+}
+
+.approved {
+	margin-left: 25px;
+}
