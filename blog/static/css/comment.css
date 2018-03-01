@@ -33,11 +33,14 @@
 }
 
 .comments_title {
+	display: block;
+	float: left;
 	margin-top: 10px;
 	margin-bottom: -15px; 
 	padding: 2px 0;
 	color: #F40;
 	font-weight: bold;
+	width: 100%;
 }
 
 .comments_link {

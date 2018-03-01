@@ -130,22 +130,49 @@
 	}
 
 	.edit_button {
-		display: inline-block;
-		margin-top: 10px;
-		width: 28%;
-		height: 70px;
-		padding: 5px 20px;
-		margin-right: 1%;
-		font-size: 40px;
+		display: block;
+		margin: 0;
+		margin-top: 20px;
+		width: 50%;
+		height: 110px;
+		padding: 20px;
+		font-size: 70px;
 		font-weight: bold;
+		float: left;
+	}
+
+	.edit_button[data-title="edit"],
+	.edit_button[data-title="edit"]:visited {
+		background-color: #f90;
+	}
+
+	.edit_button[data-title="edit"]:hover {
+		background-color: #fd9;
+		color: #f90;
+	}
+
+	.edit_button[data-title="remove"],
+	.edit_button[data-title="remove"]:visited {
+		background-color: #f50;
+	}
+
+
+	.edit_button[data-title="remove"]:hover {
+		background-color: #fcb;
+		color: #f50;
 	}
 
 	.add_comment_button {
-		width: 40%;
-		height: 70px;
-		margin-right: 1%;
-		font-size: 40px;
+		width: 100%;
+		font-size: 70px;
 		font-weight: bold;
+		padding: 20px;
+		height: 110px;
+	}
+
+	.add_comment_button p,
+	.edit_button p {
+		margin-top: -10px;
 	}
 
 	.white_round_button {

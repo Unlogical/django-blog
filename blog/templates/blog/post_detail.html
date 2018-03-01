@@ -20,10 +20,10 @@
 		<a class="add_comment_button button" href="{% url 'add_comment_to_post' pk=post.pk %}">
 			<p>Add comment</p><span class="glyphicon glyphicon-pencil"></span>
 		</a>
-		<a class="edit_button button" href="{% url 'post_edit' pk=post.pk %}">
+		<a class="edit_button button" data-title="edit" href="{% url 'post_edit' pk=post.pk %}">
 			<p>Edit</p><span class="glyphicon glyphicon-edit"></span>
 		</a>
-		<a class="edit_button button" href="{% url 'post_remove' pk=post.pk %}">
+		<a class="edit_button button" data-title="remove" href="{% url 'post_remove' pk=post.pk %}">
 			<p>Remove</p><span class="glyphicon glyphicon-trash"></span>
 		</a>
 		<a class="small_edit_button button" href="{% url 'add_comment_to_post' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span>
