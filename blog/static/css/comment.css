@@ -35,8 +35,8 @@
 .comments_title {
 	display: block;
 	float: left;
-	margin-top: 10px;
-	margin-bottom: -15px; 
+	margin-top: 20px;
+	margin-bottom: 0; 
 	padding: 2px 0;
 	color: #F40;
 	font-weight: bold;
@@ -77,3 +77,14 @@
 .approved {
 	margin-left: 25px;
 }
+
+.wide {
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+.comment .post_published_date[data-title="wide"] {
+	width: 100%;
+}
+
